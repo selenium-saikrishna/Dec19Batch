@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cloud Demo]" parallel="tests">
+  <parameter name="browser" value="safari"/>
+  <test name="On Firefox and Linux(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="day29.CloudTesting">
+        <methods>
+          <include name="dropdownTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day29.CloudTesting -->
+    </classes>
+  </test> <!-- On Firefox and Linux(failed) -->
+  <test name="On Safari and Mac(failed)" parallel="tests">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="day29.CloudTesting">
+        <methods>
+          <include name="dropdownTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day29.CloudTesting -->
+    </classes>
+  </test> <!-- On Safari and Mac(failed) -->
+  <test name="On Edge and Windows10(failed)" parallel="tests">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="day29.CloudTesting">
+        <methods>
+          <include name="dropdownTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day29.CloudTesting -->
+    </classes>
+  </test> <!-- On Edge and Windows10(failed) -->
+</suite> <!-- Failed suite [Cloud Demo] -->
